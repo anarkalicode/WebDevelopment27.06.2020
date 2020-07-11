@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>
+				Registration Form
+		</title>
+		<script>
+			function Display()
+			{
+				alert ("welcome "+document.getElementById("name").value +" Thank you for Registring with us");
+				document.getElementById("name").value = "";
+				document.getElementById("number").value = "";
+				document.getElementById("city").value = "";
+			}
+		</script>
+		<style>
+				body 
+				{
+				  background-color: lightblue;
+				  font-family: Arial;
+				}
+				.center 
+				{
+					text-align: center;
+				}
+				table 
+				{
+					margin: 0 auto;
+				}
+				.b1
+				{
+				  background-color: #0000ff;
+				  color: white;
+				  padding: 14px 20px;
+				  margin: 8px 0;
+				  border: none;
+				  cursor: pointer;
+				  width: 100%;
+				}
+
+				.b1:hover 
+				{
+				  opacity: 0.8;
+				}
+				input[type=text]
+				{
+				  width: 100%;
+				  padding: 12px 20px;
+				  margin: 8px 0;
+				  display: inline-block;
+				  border: 1px solid #ccc;
+				  box-sizing: border-box;
+				}
+		</style>
+		
+	</head>
+
+	<body>
+			<h1 class="center"></> Welcome to Codekul </></h1>
+			<h2 class="center">Register Yourself</h2>
+			<div class="center">
+			<table>
+			<tr> <td>Name</td><td>    <input type="text" id="name"/></td></tr>
+			<tr> <td>Number</td> <td><input type="text" id="number"/></td></tr>
+			<tr> <td>City</td><td><input type="text" id="city"/></td></tr>
+			<tr> <td></td><td><input class="b1" type="button" value="Register" id="submitbutton" onclick="Display()"/></td></tr>
+			</table>
+			</div>
+	</body>
+	
+	
+</html>
